@@ -1,0 +1,33 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Задача 4</title>
+        <link rel="stylesheet" href="styles.css">
+        <script>
+            function changing() {
+                var crl1 = document.getElementById("circle1");
+                var crl2 = document.getElementById("circle2");
+                var crl3 = document.getElementById("circle3");
+                var crl4 = document.getElementById("circle4");
+
+                crl1.style.marginTop = (Math.random() * 40) + "%";
+                crl1.style.marginLeft = (Math.random() * 90) + "%";
+                crl2.style.marginTop = (Math.random() * 30) + "%";
+                crl2.style.marginLeft = (Math.random() * 80) + "%";
+                crl3.style.marginTop = (Math.random() * 45) + "%";
+                crl3.style.marginLeft = (Math.random() * 93) + "%";
+                crl4.style.marginTop = (Math.random() * 45) + "%";
+                crl4.style.marginLeft = (Math.random() * 93) + "%";
+            }            
+        </script>
+    </head>
+    <body>
+        <button onclick="changing()">Change position</button>
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+        <div id="circle4"></div>
+    </body>
+</html>
